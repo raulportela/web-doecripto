@@ -107,13 +107,7 @@ function PageInstituto() {
                                 </div>
                             </div>
 
-                            <div className="col-sm-4 col-md-2">
-                                <div className="row botoes-doacao">
-                                    <div className="col">
-                                        <button type="button" className="btn-principal">GERAR CODE PIX</button>
-                                    </div>
-                                </div>
-                            </div>
+                            
                         </div>
                     </form>
                     <hr className="my-4" />

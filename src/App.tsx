@@ -10,10 +10,9 @@ import PageInstituto from './pages/telaDoacao';
 function App() {
 
     return (
-      <div>
-        <Dash></Dash>
-        <Main></Main>
-      </div>
+      <>
+        <PageInstituto></PageInstituto>
+      </>
     );
 }
 

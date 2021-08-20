@@ -106,7 +106,7 @@ p {
 #svg-cabecalho {
     position: relative;
     margin: -1px;
-    bottom: 6px;
+    bottom: 35px;
     /*Coloquei esse bottom 3px, para não haver nenhum espaço entre o svg e o banner. */
     width: 100.1%;
 }
@@ -118,6 +118,7 @@ p {
 .pix-content {
     background: #f6b93b url(../img/banner-pix.png) right center/200px no-repeat;
     text-align: center;
+    position: relative;
     font-weight: bold;
     color: #fff;
     padding: 20px;
@@ -142,6 +143,7 @@ p {
 
 .itens-copy {
     margin: 0;
+    position: relative;
     justify-content: center;
     padding: 20px;
 }
@@ -149,19 +151,21 @@ p {
 #pix-copy {
     margin-top: 10px;
     width: 250px;
+    left: 7.5%;
+    position: relative;
     margin-bottom: 0;
     opacity: 0.7;
     border-radius: 4px;
 }
 
 .box-qrcode {
-    margin: 0;
+    position: absolute;
     width: 120px;
     height: 120px;
-    left: 50%;
+    left: 35%;
     background: #fff;
-    opacity: 0.7;
-    border-radius: 4px;
+    opacity: 0.5;
+    z-index: 1000;
 }
 
 .rodape {
