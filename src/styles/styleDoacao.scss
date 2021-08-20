@@ -118,7 +118,6 @@ p {
 .pix-content {
     background: #f6b93b url(../img/banner-pix.png) right center/200px no-repeat;
     text-align: center;
-    position: relative;
     font-weight: bold;
     color: #fff;
     padding: 20px;
@@ -143,7 +142,6 @@ p {
 
 .itens-copy {
     margin: 0;
-    position: relative;
     justify-content: center;
     padding: 20px;
 }
@@ -159,10 +157,10 @@ p {
 }
 
 .box-qrcode {
-    position: absolute;
-    width: 120px;
+    width: auto;
     height: 120px;
-    left: 35%;
+    position: relative;
+    left: 0%;
     background: #fff;
     opacity: 0.5;
     z-index: 1000;
@@ -202,7 +200,15 @@ p {
         margin-top: 20px;
     }
     .box-qrcode {
-        margin-left: 5%;
+        width: auto;
+        height: 200px;
+    }
+    .itens-copy {
+        margin: 10px;
+    }
+    .pix-copy {
+        margin: 10px;
+        margin-left: 60px;
     }
 }
 
@@ -223,7 +229,7 @@ p {
         z-index: 0;
     }
     .box-qrcode {
-        width: 180px;
+        width: auto;
         height: 180px;
         margin-top: 20px;
         margin-bottom: 20px;

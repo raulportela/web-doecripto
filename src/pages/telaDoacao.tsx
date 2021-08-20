@@ -1,23 +1,25 @@
 import '../styles/styleDoacao.scss'
 import onChangeQtd from '../scripts/main'
 import { useState } from 'react';
-import { lstat } from 'fs';
+import { useEffect } from 'react';
 
 
-function PageInstituto() {
+export default function PageInstituto() {
 
 
-    const [Doacao, setDoacao]=useState({"nomeDoador":"","emailDoador":"", "qtdMoedas":"1","vlrUnitario":"1.53", "vlorTotal":""});
-    const [qtdMoeda, setQtdMoeda]=useState('1');
-    const [valorMoeda]=useState(1.53);
-    const [vlrTotal, setValorTotal]=useState(Number.parseFloat(qtdMoeda)*valorMoeda);
+    const [doacao, setDoacao] = useState([
+        { anonimo: false, nomeDoador: "", emailDoador: "", qtdMoedas: 1, vlrMoeda: 1.53, vlorTotal: 1.53 }
+    ]);
 
-    const later=()=>{
-        setValorTotal(Number.parseFloat(qtdMoeda)*valorMoeda);
-    }
+    
+    useEffect(() => {
+        
+    }, []);
+
+
 
     return (
-        <div>
+        <>
             <header>
                 <nav className="navbar navbar-dark cabecalho">
                     <a href="index.html">
@@ -48,7 +50,7 @@ function PageInstituto() {
                             </div>
                         </div>
 
-                        
+
 
                     </div>
                 </div>
@@ -88,17 +90,17 @@ function PageInstituto() {
                                     <div className="row">
                                         <div className="col">
                                             <label className="form-check-label" htmlFor="qtd-moedas">Qtd de Moedas</label>
-                                            <input type="number" id="qtd-moedas" value={qtdMoeda} onBlur={later} onChange={(e)=>setQtdMoeda(e.target.value)} className="form-control" />
+                                            <input type="number" id="qtd-moedas"  />
                                         </div>
                                         <div className="col">
                                             <label className="form-check-label" htmlFor="vlr-uni">Vlr Unitário <i className="bi bi-currency-exchange"></i></label>
-                                            <input type="text" id="vlr-uni" className="form-control" value={valorMoeda}  disabled />
+                                            <input type="text" id="vlr-uni" className="form-control" disabled />
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-6 col-md-6">
                                             <label className="form-check-label" htmlFor="total-brl">Total R$</label>
-                                            <input type="text" id="total-brl"value={vlrTotal} className="form-control" disabled />
+                                            <input type="text" id="total-brl" className="form-control" disabled />
                                         </div>
                                         <div className="col-6 col-md-6">
                                             <button type="button" className="btn-principal">GERAR CODE PIX <i className="bi bi-x-diamond-fill"></i></button>
@@ -107,7 +109,7 @@ function PageInstituto() {
                                 </div>
                             </div>
 
-                            
+
                         </div>
                     </form>
                     <hr className="my-4" />
@@ -149,8 +151,7 @@ function PageInstituto() {
                 </div>
                 <p className="copyright">Todos os direitos reservados. <i className="bi bi-copyright"></i></p>
             </footer>
-        </div>
+        </>
     );
 }
 
-export default PageInstituto;
