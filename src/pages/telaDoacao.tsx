@@ -1,7 +1,21 @@
 import '../styles/styleDoacao.scss'
 import onChangeQtd from '../scripts/main'
+import { useState } from 'react';
+import { lstat } from 'fs';
+
 
 function PageInstituto() {
+
+
+    const [Doacao, setDoacao]=useState({"nomeDoador":"","emailDoador":"", "qtdMoedas":"1","vlrUnitario":"1.53", "vlorTotal":""});
+    const [qtdMoeda, setQtdMoeda]=useState('1');
+    const [valorMoeda]=useState(1.53);
+    const [vlrTotal, setValorTotal]=useState(Number.parseFloat(qtdMoeda)*valorMoeda);
+
+    const later=()=>{
+        setValorTotal(Number.parseFloat(qtdMoeda)*valorMoeda);
+    }
+
     return (
         <div>
             <header>
@@ -24,7 +38,6 @@ function PageInstituto() {
                                     <div className="col col-lg-12">
                                         <h1 className="display-2">PET'S Cidade Dutra</h1>
                                     </div>
-                                    <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                                     <hr className="my-4 hr-banner" />
                                 </div>
                             </div>
@@ -35,9 +48,7 @@ function PageInstituto() {
                             </div>
                         </div>
 
-                        <p className="lead">
-                            <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                        </p>
+                        
 
                     </div>
                 </div>
@@ -77,17 +88,17 @@ function PageInstituto() {
                                     <div className="row">
                                         <div className="col">
                                             <label className="form-check-label" htmlFor="qtd-moedas">Qtd de Moedas</label>
-                                            <input type="number" id="qtd-moedas" onChange={onChangeQtd} className="form-control" placeholder="0" />
+                                            <input type="number" id="qtd-moedas" value={qtdMoeda} onBlur={later} onChange={(e)=>setQtdMoeda(e.target.value)} className="form-control" />
                                         </div>
                                         <div className="col">
                                             <label className="form-check-label" htmlFor="vlr-uni">Vlr Unitário <i className="bi bi-currency-exchange"></i></label>
-                                            <input type="text" id="vlr-uni" className="form-control" value="1.53" disabled />
+                                            <input type="text" id="vlr-uni" className="form-control" value={valorMoeda}  disabled />
                                         </div>
                                     </div>
                                     <div className="row">
                                         <div className="col-6 col-md-6">
                                             <label className="form-check-label" htmlFor="total-brl">Total R$</label>
-                                            <input type="text" id="total-brl" className="form-control" disabled />
+                                            <input type="text" id="total-brl"value={vlrTotal} className="form-control" disabled />
                                         </div>
                                         <div className="col-6 col-md-6">
                                             <button type="button" className="btn-principal">GERAR CODE PIX <i className="bi bi-x-diamond-fill"></i></button>
@@ -131,10 +142,6 @@ function PageInstituto() {
                         </div>
                     </div>
                 </div>
-
-
-
-
             </section>
             <footer className="rodape">
                 <div className="row">
@@ -151,3 +158,5 @@ function PageInstituto() {
         </div>
     );
 }
+
+export default PageInstituto;

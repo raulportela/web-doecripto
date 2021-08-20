@@ -7,7 +7,7 @@ function Main(){
     return(
         <div className="main">
             <Header></Header>
-            <AlterarInflacao></AlterarInflacao>
+            <ContentDash></ContentDash>
         </div>
     );
 

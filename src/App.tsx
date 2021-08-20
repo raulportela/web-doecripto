@@ -5,15 +5,16 @@ import '../src/styles/header.scss';
 import Dash from './pages/Dash';
 import Main from './pages/Main';
 import AlterarInflacao from './pages/AlterarInflacao';
-import Login from './pages/Login';
+import PageInstituto from './pages/telaDoacao';
 
 function App() {
-  return (
-    <div>
-      <Dash></Dash>
-      <Main></Main>
-    </div>
-  );
+
+    return (
+      <div>
+        <Dash></Dash>
+        <Main></Main>
+      </div>
+    );
 }
 
 export default App;
