@@ -93,7 +93,7 @@ export default function PageInstituto() {
                                             <input type="number" id="qtd-moedas"  />
                                         </div>
                                         <div className="col">
-                                            <label className="form-check-label" htmlFor="vlr-uni">Vlr Unitário <i className="bi bi-currency-exchange"></i></label>
+                                            <label className="form-check-label" htmlFor="vlr-uni">Vlr Unitário - CashHand <i className="bi bi-currency-exchange"></i></label>
                                             <input type="text" id="vlr-uni" className="form-control" disabled />
                                         </div>
                                     </div>
