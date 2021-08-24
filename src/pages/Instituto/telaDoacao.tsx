@@ -1,5 +1,5 @@
 import '../styles/styleDoacao.scss'
-import onChangeQtd from '../scripts/main'
+import onChangeQtd from '../../scripts/main'
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -11,9 +11,9 @@ export default function PageInstituto() {
         { anonimo: false, nomeDoador: "", emailDoador: "", qtdMoedas: 1, vlrMoeda: 1.53, vlorTotal: 1.53 }
     ]);
 
-    
+
     useEffect(() => {
-        
+
     }, []);
 
 
@@ -90,7 +90,7 @@ export default function PageInstituto() {
                                     <div className="row">
                                         <div className="col">
                                             <label className="form-check-label" htmlFor="qtd-moedas">Qtd de Moedas</label>
-                                            <input type="number" id="qtd-moedas"  />
+                                            <input type="number" id="qtd-moedas" />
                                         </div>
                                         <div className="col">
                                             <label className="form-check-label" htmlFor="vlr-uni">Vlr Unitário - CashHand <i className="bi bi-currency-exchange"></i></label>

@@ -1,12 +1,12 @@
 import React from 'react';
-import "../styles/nav.scss"
+import "../../../styles/nav.scss"
 
 function Dash() {
     return (
         <div className="navigation">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href={"/resumo"}>
                         <span className="icon"><i className="fas fa-university"></i></span>
                         <span className="title">
                             <h2>DOE CRIPTO</h2>
@@ -14,7 +14,7 @@ function Dash() {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href={"/resumo"}>
                         <span className="icon"><i className="fas fa-home"></i></span>
                         <span className="title">
                             Dashboard
@@ -22,7 +22,7 @@ function Dash() {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href={"/table-instituicoes"}>
                         <span className="icon"><i className="fas fa-laptop-house"></i></span>
                         <span className="title">
                             Instituições
@@ -30,7 +30,7 @@ function Dash() {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href={"/table-doacoes"}>
                         <span className="icon"><i className="fas fa-hand-holding-heart"></i></span>
                         <span className="title">
                             Doações

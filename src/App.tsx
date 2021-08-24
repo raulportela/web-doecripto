@@ -1,17 +1,14 @@
 import React from 'react';
-import '../src/global.scss';
-import '../src/styles/nav.scss';
-import '../src/styles/header.scss';
-import Dash from './pages/Dash';
-import Main from './pages/Main';
-import AlterarInflacao from './pages/AlterarInflacao';
-import PageInstituto from './pages/telaDoacao';
+
+import './global.scss'
+
+import Routes from './pages/Routes'
 
 function App() {
 
     return (
       <>
-        <PageInstituto></PageInstituto>
+        <Routes></Routes>
       </>
     );
 }

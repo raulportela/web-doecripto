@@ -1,7 +1,7 @@
 import React from 'react';
-import toggleMenu from '../scripts/main';
-import "../styles/header.scss"
-import fotoUser from '../img/user.jpg'
+import toggleMenu from '../../../scripts/main';
+import "../../../styles/header.scss"
+import fotoUser from '../../../img/user.jpg'
 
 function Header() {
     return (

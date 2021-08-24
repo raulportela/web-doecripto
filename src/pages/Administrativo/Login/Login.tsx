@@ -1,7 +1,8 @@
-import '../styles/login.scss';
+import '../../../styles/login.scss';
 
 function Login() {
     return (
+        <div className="classbody">
         <main className="box-login">
             <h2>Login - Doe Cripto</h2>
             <form action="">
@@ -18,6 +19,7 @@ function Login() {
             </form>
 
         </main>
+        </div>
     );
 }
 export default Login;
