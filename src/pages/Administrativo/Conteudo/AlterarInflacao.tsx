@@ -9,7 +9,7 @@ function ContentDash() {
         <div className="details">
             <div className="recentOrders">
                 <div className="cardHeader">
-                    <h2>Alterar Inflacao</h2>
+                    <h2>Alterar Inflação</h2>
                 </div>
                 <div className="content-container">
                     <div className="content">
@@ -19,7 +19,7 @@ function ContentDash() {
                                 <div className="user-content-details">
                                     <input type="hidden" name="id" id="id" />
                                     <div className="input-box">
-                                        <span className="content-details">Moeda - API</span>
+                                        <span className="content-details">Moeda - API CashHand</span>
                                         <input type="text" disabled />
                                     </div>
                                     <div className="input-box">
