@@ -61,19 +61,13 @@
     padding: 9px 5px;
 }
 
-.details .recentOrders table thead tr td:last-child,
-.details .recentOrders table tbody tr td:last-child {
-    text-align: right;
+.details .recentOrders table thead tr td:nth-child(1),
+.details .recentOrders table tbody tr td:nth-child(1) {
+    text-align: left;
 }
 
-.details .recentOrders table thead tr td:nth-child(2),
-.details .recentOrders table tbody tr td:nth-child(2) {
-    text-align: right;
-    padding-right: 20px;
-}
-
-.details .recentOrders table thead tr td:nth-child(3),
-.details .recentOrders table tbody tr td:nth-child(3) {
+.details .recentOrders table thead tr td,
+.details .recentOrders table tbody tr td {
     text-align: center;
 }
 
@@ -91,12 +85,12 @@
     background: #20bf6b
 }
 
-.aberto {
-    background: #1795ce
-}
-
 .pgtorecusado {
     background: #ff3838;
+}
+
+.aberto {
+    background: #1795ce
 }
 
 .fechado {
