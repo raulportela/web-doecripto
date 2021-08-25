@@ -11,8 +11,7 @@ function ContentDash() {
         <div className="details">
             <div className="recentOrders">
                 <div className="cardHeader">
-                    <h2>Instituições</h2>
-                    <a href="#" className="btn"><i className="fas fa-plus-circle"></i> Adicionar</a>
+                    <h2>Lista Instituições</h2>
                 </div>
                 <table>
                     <thead>
@@ -34,7 +33,7 @@ function ContentDash() {
                             <td>54</td>
                             <td>108</td>
                             <td><span className="status pgtook">Ativo</span></td>
-                            <td><span><i title="Processar Doação" className="fas fa-gifts"></i></span></td>
+                            <td><span><a href={"/processar-doacao"}><i title="Processar Doação" className="fas fa-gifts"></i></a></span></td>
                         </tr>
                     </tbody>
                 </table>

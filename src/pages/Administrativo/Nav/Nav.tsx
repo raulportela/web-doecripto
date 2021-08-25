@@ -7,7 +7,7 @@ function Dash() {
             <ul>
                 <li>
                     <a href={"/resumo"}>
-                        <span className="icon"><i className="fas fa-university"></i></span>
+                        <span className="icon"><i className="fas fa-coins"></i></span>
                         <span className="title">
                             <h2>DOE CRIPTO</h2>
                         </span>
@@ -38,10 +38,18 @@ function Dash() {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <span className="icon"><i className="fas fa-id-card"></i></span>
+                    <a href={"/table-categorias"}>
+                        <span className="icon"><i className="fas fa-network-wired"></i></span>
                         <span className="title">
-                            Conta Corrente
+                            Categorias
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href={"/alterar-api-cc"}>
+                        <span className="icon"><i className="fas fa-laptop-code"></i></span>
+                        <span className="title">
+                            API CC
                         </span>
                     </a>
                 </li>

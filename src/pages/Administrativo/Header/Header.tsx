@@ -12,39 +12,48 @@ function Header() {
                     <i className="far fa-bell"></i>
                 </div>
                 <div className="user">
-                    <img src={fotoUser} alt=""/>
+                    <img src={fotoUser} alt="" />
                 </div>
             </div>
             <div className="cardBox">
-                <div className="card">
-                    <div>
-                        <div className="numbers">1,042</div>
-                        <div className="cardName">Moedas doadas</div>
+                <a href={"/table-doacoes"}>
+                    <div className="card">
+                        <div>
+                            <div className="numbers">1,042</div>
+                            <div className="cardName">Moedas doadas</div>
+                        </div>
+                        <div className="iconBox"><i className="fas fa-hand-holding-usd"></i></div>
                     </div>
-                    <div className="iconBox"><i className="fas fa-hand-holding-usd"></i></div>
-                </div>
-                <div className="card">
-                    <div>
-                        <div className="numbers">80</div>
-                        <div className="cardName">Valor BRL</div>
+                </a>
+                <a href={"/table-doacoes"}>
+                    <div className="card">
+                        <div>
+                            <div className="numbers">80</div>
+                            <div className="cardName">Valor BRL</div>
+                        </div>
+                        <div className="iconBox"><i className="fas fa-money-check-alt"></i>
+                        </div>
                     </div>
-                    <div className="iconBox"><i className="fas fa-money-check-alt"></i>
+                </a>
+                <a href={"/table-doacoes"}>
+                    <div className="card">
+                        <div>
+                            <div className="numbers">208</div>
+                            <div className="cardName">Doa. em aberto</div>
+                        </div>
+                        <div className="iconBox"><i className="fas fa-list"></i></div>
                     </div>
-                </div>
-                <div className="card">
-                    <div>
-                        <div className="numbers">208</div>
-                        <div className="cardName">Doa. em aberto</div>
+                </a>
+                <a href={"/table-instituicoes"}>
+                    <div className="card">
+                        <div>
+                            <div className="numbers">2</div>
+                            <div className="cardName">Inst. Cadastradas</div>
+                        </div>
+                        <div className="iconBox"><i className="far fa-building"></i></div>
                     </div>
-                    <div className="iconBox"><i className="fas fa-list"></i></div>
-                </div>
-                <div className="card">
-                    <div>
-                        <div className="numbers">2</div>
-                        <div className="cardName">Inst. Cadastradas</div>
-                    </div>
-                    <div className="iconBox"><i className="far fa-building"></i></div>
-                </div>
+                </a>
+
             </div>
         </div>
     );

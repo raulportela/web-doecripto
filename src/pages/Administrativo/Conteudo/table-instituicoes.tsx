@@ -11,8 +11,8 @@ function ContentDash() {
         <div className="details">
             <div className="recentOrders">
                 <div className="cardHeader">
-                    <h2>Instituições</h2>
-                    <a href="#" className="btn"><i className="fas fa-plus-circle"></i> Adicionar</a>
+                    <h2>Lista Instituições</h2>
+                    <a href={"/incluir-instituicao"} className="btn"><i className="fas fa-plus-circle"></i> Adicionar</a>
                 </div>
                 <table>
                     <thead>

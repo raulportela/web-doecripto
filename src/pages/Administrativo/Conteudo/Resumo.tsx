@@ -69,45 +69,6 @@ function ContentDash() {
                     </tbody>
                 </table>
             </div>
-            <div className="recentCustomers">
-                <h2>Instituição com Doação</h2>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td width="60px">
-                                <div className="imgBx"><img src={foto1} alt="" /></div>
-                            </td>
-                            <td>
-                                <h4>David<br /><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60px">
-                                <div className="imgBx"><img src={foto2} alt="" /></div>
-                            </td>
-                            <td>
-                                <h4>David<br /><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60px">
-                                <div className="imgBx"><img src={foto3} alt="" /></div>
-                            </td>
-                            <td>
-                                <h4>David<br /><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td width="60px">
-                                <div className="imgBx"><img src={foto4} alt="" /></div>
-                            </td>
-                            <td>
-                                <h4>David<br /><span>Italy</span></h4>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
 
     );
