@@ -53,7 +53,7 @@ form .input-box span.content-details {
 
 .user-content-details .input-box input,
 .user-content-details .input-box select,
-.user-content-details .input-box input[type=file] {
+.user-content-details .input-box input[type="file"] {
     height: 45px;
     width: 100%;
     outline: none;
@@ -66,6 +66,7 @@ form .input-box span.content-details {
 }
 
 .user-content-details .input-box input:focus,
+.user-content-details .input-box input[type="number"]:focus,
 .user-content-details .input-box input:valid {
     border-color: #9b59b6;
 }

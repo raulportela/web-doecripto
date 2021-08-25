@@ -10,6 +10,7 @@ import IncluirInstituicao from './Administrativo/Main/Main-IncluirInstituicao'
 import IncluirCategoria from './Administrativo/Main/Main-IncluirCategoria'
 import ProcessarDoacao from './Administrativo/Main/Main-ProcessarDoacao'
 import APICC from './Administrativo/Main/Main-AlterarAPICC'
+import AlterarInflacao from './Administrativo/Main/Main-AlterarInflacao'
 
 
 function Routes(){
@@ -26,6 +27,7 @@ function Routes(){
                 <Route path="/incluir-categoria" component={IncluirCategoria}/>
                 <Route path="/processar-doacao" component={ProcessarDoacao}/>
                 <Route path="/alterar-api-cc" component={APICC}/>
+                <Route path="/alterar-inflacao" component={AlterarInflacao}/>
                 
             </Switch>
         </BrowserRouter>

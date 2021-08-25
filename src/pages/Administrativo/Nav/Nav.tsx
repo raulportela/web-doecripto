@@ -54,7 +54,7 @@ function Dash() {
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href={"/alterar-inflacao"}>
                         <span className="icon"><i className="fas fa-cog"></i></span>
                         <span className="title">
                             Configurações

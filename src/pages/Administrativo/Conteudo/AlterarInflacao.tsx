@@ -9,30 +9,30 @@ function ContentDash() {
         <div className="details">
             <div className="recentOrders">
                 <div className="cardHeader">
-                    <h2>Alterar Hash API - GerenciaNet</h2>
+                    <h2>Alterar Inflacao</h2>
                 </div>
                 <div className="content-container">
                     <div className="content">
                         <form action="#">
                             <div>
-                                <div className="title">Dados Conta - Gerencia Net</div>
+                                <div className="title">Dados Inflação</div>
                                 <div className="user-content-details">
-                                    <input type="hidden" name="id" id="id"/>
+                                    <input type="hidden" name="id" id="id" />
                                     <div className="input-box">
-                                        <span className="content-details">Nome Conta</span>
-                                        <input type="text" placeholder="Insira Nome" required />
+                                        <span className="content-details">Moeda - API</span>
+                                        <input type="text" disabled />
                                     </div>
                                     <div className="input-box">
-                                        <span className="content-details">Chave - Cliente_id</span>
-                                        <input type="text" placeholder="Insira Chave client_id" required />
+                                        <span className="content-details">Moeda - DoeCripto</span>
+                                        <input type="text" disabled />
                                     </div>
                                     <div className="input-box">
-                                        <span className="content-details">Chave - Cliente_secret</span>
-                                        <input type="text" placeholder="Insira Chave cliente_secret" required />
+                                        <span className="content-details">Valor BRL R$</span>
+                                        <input type="text" disabled />
                                     </div>
                                     <div className="input-box">
-                                        <span className="content-details">Arquivo - Certificado</span>
-                                        <input type="file" required />
+                                        <span className="content-details">Porcentagem %</span>
+                                        <input type="number" />
                                     </div>
                                 </div>
                             </div>
