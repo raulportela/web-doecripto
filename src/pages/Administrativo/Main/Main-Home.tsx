@@ -4,7 +4,7 @@ import '../../../styles/ConteudoMain.scss'
 
 import Header from '../Header/Header';
 import Dash from '../Nav/Nav';
-import Resumo from '../Conteudo/Resumo';
+import Home from '../Conteudo/Home';
 
 
 function Main() {
@@ -13,7 +13,7 @@ function Main() {
             <Dash></Dash>
             <div className="main">
                 <Header></Header>
-                <Resumo></Resumo>
+                <Home></Home>
             </div>
 
         </div>

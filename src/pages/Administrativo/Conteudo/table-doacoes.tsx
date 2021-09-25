@@ -1,9 +1,4 @@
-import React from "react";
 import '../../../styles/ConteudoMain.scss'
-import foto1 from '../../../img/img1.jpg'
-import foto2 from '../../../img/img2.jpg'
-import foto3 from '../../../img/img3.jpg'
-import foto4 from '../../../img/img4.jpg'
 
 
 function ContentDash() {

@@ -1,12 +1,15 @@
-import React from 'react';
 import "../../../styles/nav.scss"
+import React, { useContext} from "react";
+import { Context } from "../../../Context/AuthContext"
 
 function Dash() {
+    const { handleLogout } = useContext(Context);
+
     return (
         <div className="navigation">
             <ul>
                 <li>
-                    <a href={"/resumo"}>
+                    <a href={"/Home"}>
                         <span className="icon"><i className="fas fa-coins"></i></span>
                         <span className="title">
                             <h2>DOE CRIPTO</h2>
@@ -14,7 +17,7 @@ function Dash() {
                     </a>
                 </li>
                 <li>
-                    <a href={"/resumo"}>
+                    <a href={"/Home"}>
                         <span className="icon"><i className="fas fa-home"></i></span>
                         <span className="title">
                             Dashboard
@@ -63,7 +66,7 @@ function Dash() {
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/login" onClick={handleLogout}>
                         <span className="icon"><i className="fas fa-sign-out-alt"></i></span>
                         <span className="title">
                             Sign out

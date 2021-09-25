@@ -1,5 +1,4 @@
-import React from 'react';
-import toggleMenu from '../../../scripts/main';
+import toggleMenu from '../../../ts/main';
 import "../../../styles/header.scss"
 import fotoUser from '../../../img/user.jpg'
 
